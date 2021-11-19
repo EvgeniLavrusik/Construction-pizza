@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Document</title>
+</head>
+<body>
+	<main>
+		<section class='order'>
+			<div class='image_pizza' id='image_pizza'>
+				<img class='img_pizza_part1' src="./images/image_part_001.png" alt="img_pizza_part1"/>
+				<img class='img_pizza_part2' src="./images/image_part_002.png" alt="img_pizza_part2"/>
+				<img class='img_pizza_part3' src="./images/image_part_003.png" alt="img_pizza_part3"/>
+				<img class='img_pizza_part4' src="./images/image_part_004.png" alt="img_pizza_part4"/>
+			</div>
+			<div class="orderPizza">
+				<ul class='listOrderPizza' id='listOrderPizza'>
+				</ul>
+				<span>Цена:</span>
+				<span id="priceWrapper">0$</span>
+			</div>
+		</section>
+		<div class="button-wrapper"><button id='to_order' class='btn'>ЗАКАЗАТЬ</button></div>
+		<div class='pizzaPart'>
+			<div class='osnova_wrapper'>
+				<h3>Основа</h3>
+				<ul id='osnova' class="osnovaUl">
+					<li class="osnova" id='osnova_1'>Тонкое тесто</li>
+					<li class="osnova" id='osnova_2'>Пышное тесто</li>
+					<li class="osnova" id='osnova_3'>Слоеное тесто</li>
+					<li class="osnova" id='osnova_4'>Тесто на пиве</li>
+				</ul>
+			</div>
+			<div class="ing1_wrapper">
+				<h3>Ингридиент 1</h3>
+				<ul id='ing1' class="ing1Ul">
+					<li class="ing1" id='ing1_1'>Ветчинна</li>
+					<li class="ing1" id='ing1_2'>Грудинка</li>
+					<li class="ing1" id='ing1_3'>Лосось</li>
+					<li class="ing1" id='ing1_4'>Креветки</li>
+				</ul>
+			</div>
+			<div class="ing2_wrapper">
+				<h3>Ингридиент 2</h3>
+				<ul id='ing2' class='ing2Ul'>
+					<li class="ing2" id='ing2_1'>Томат</li>
+					<li class="ing2" id='ing2_2'>Сыр</li>
+					<li class="ing2" id='ing2_3'>Оливки</li>
+					<li class="ing2" id='ing2_4'>Перец</li>
+				</ul>
+			</div>
+			<div class="sauce_wrapper">
+				<h3>Соус</h3>
+				<ul id='sauce' class='sauceUl'>
+					<li class="sous" id='sauce_1'>Томатный</li>
+					<li class="sous" id='sauce_2'>Чесночный</li>
+					<li class="sous" id='sauce_3'>Карри</li>
+					<li class="sous" id='sauce_4'>Терияки</li>
+				</ul>
+			</div>
+		</div>
+		<dialog>
+			<p>Ваш заказ принят!!</p>
+			<button id="close" class="btn_close">Закрыть</button>
+		</dialog>
+	</main>
+	<script src="script.js" type="module"></script>
+</body>
+</html>

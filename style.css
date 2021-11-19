@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+span {
+  font-size: 25px;
+  color: gray;
+}
+
+.orderPizza {
+  border: 3px solid #0059ff;
+  min-width: 100px;
+  min-height: 100px;
+  background-color: #F29D42;
+}
+
+.img_pizza_part1,
+.img_pizza_part2 {
+  top: 10px;
+  opacity: 0;
+}
+
+.img_pizza_part3,
+.img_pizza_part4 {
+  opacity: 0;
+}
+
+dialog {
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  margin: 200px auto;
+  width: 400px;
+  height: 250px;
+  border-radius: 20px;
+  background: #c5afaf;
+}
+
+dialog .btn_close {
+  margin-top: 40px;
+  width: 150px;
+  height: 50px;
+  border-radius: 20px;
+}
+
+dialog p {
+  margin-top: 50px;
+}
+
+.image_pizza {
+  background-color: #6d6666;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 170px 170px;
+      grid-template-columns: 170px 170px;
+  -ms-grid-rows: 170px 170px;
+      grid-template-rows: 170px 170px;
+}
+
+.image_pizza img {
+  left: 20px;
+  width: 170px;
+  position: relative;
+}
+
+ul {
+  padding: 10px 70px;
+}
+
+main {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1100px;
+  grid-gap: 10px;
+  background-color: #6d6666;
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'order list' 'order list' 'button list';
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 4fr 3fr 1fr;
+      grid-template-rows: 4fr 3fr 1fr;
+}
+
+.button-wrapper {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: button;
+  margin: auto auto;
+}
+
+.button-wrapper .btn {
+  border-radius: 10px;
+  padding: 20px 20px;
+  font-size: 30px;
+  width: 350px;
+  height: 80px;
+  color: gray;
+  background-color: #F29D42;
+  border: none;
+}
+
+.button-wrapper .btn:hover {
+  cursor: pointer;
+  background-color: #ff6a00;
+}
+
+.order {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: order;
+}
+
+li {
+  list-style-type: none;
+}
+
+li:hover {
+  cursor: pointer;
+  color: red;
+}
+
+.img_pizza {
+  width: 200px;
+}
+
+.listOrderPizza {
+  color: gray;
+}
+
+.listOrderPizza li {
+  font-size: 25px;
+  color: gray;
+  width: 170px;
+}
+
+.pizzaPart {
+  text-align: center;
+  grid-gap: 10px;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: list;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+}
+
+.pizzaPart h3 {
+  margin-top: 15px;
+  font-size: 25px;
+  color: gray;
+}
+
+.pizzaPart li {
+  font-size: 25px;
+  color: gray;
+  width: 170px;
+  padding: 20px 20px;
+  border: 1px solid gray;
+}
+
+.pizzaPart .activ {
+  background-color: rgba(255, 106, 0, 0.44);
+  color: white;
+}
+
+.ing1_wrapper,
+.ing2_wrapper,
+.osnova_wrapper,
+.sauce_wrapper {
+  background-color: #F29D42;
+}
+/*# sourceMappingURL=style.css.map */
